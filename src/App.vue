@@ -8,13 +8,23 @@ import TheFooter from './components/TheFooter.vue'
 
 <template>
   <div class="h-full flex flex-col justify-between">
-    <TheHeader />
-    <div class="flex flex-row grow">
-      <LeftPanel />
-      <CenterPanel />
-      <RightPanel />
+    <div class="basis-16 flex-none">
+      <TheHeader />
     </div>
+    <div class="flex flex-row flex-grow">
+      <div class="basis-1/5 flex-none">
+        <LeftPanel />
+      </div>
+      <div class="basis-3/5 flex-grow">
+        <CenterPanel />
+      </div>
+      <div class="basis-1/5 flex-none">
+        <RightPanel />
+      </div>
+    </div>
+    <div class="basis-16 flex-none">
       <TheFooter />
+    </div>
   </div>
 </template>
 
