@@ -1,5 +1,3 @@
 <template>
-  <div class="p-2 flex flex-row place-content-center">
-    Left
-  </div>
+  <div class="flex flex-row place-content-center p-2">Left</div>
 </template>

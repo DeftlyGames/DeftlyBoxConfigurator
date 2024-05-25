@@ -1,5 +1,3 @@
 <template>
-  <footer class="p-2 flex flex-row place-content-center">
-    Footer
-  </footer>
+  <footer class="flex flex-row place-content-center p-2">Footer</footer>
 </template>

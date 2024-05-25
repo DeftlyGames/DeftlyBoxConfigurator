@@ -2,6 +2,7 @@
     "files.associations": {
         "*.css": "tailwindcss"
     },
+    "editor.formatOnSave": true,
     "editor.quickSuggestions": {
         "strings": "on"
       }
