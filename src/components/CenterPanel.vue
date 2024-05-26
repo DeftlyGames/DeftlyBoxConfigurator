@@ -13,25 +13,20 @@
         class="size-full"
         :style="{
           transform: `translate(${containerStyle.positionX}px, ${containerStyle.positionY}px) scale(${containerStyle.scale}) translate(50%, 50%)`,
+          backfaceVisibility: 'hidden',
+          outline: '1px solid transparent',
+          transformStyle: 'flat',
+          willChange: 'transform',
         }"
       >
-        <img
-          alt="Box Quad Top View"
-          class="absolute max-w-none"
-          draggable="false"
-          style="
-            width: 145.5mm;
-            height: 145.5mm;
-            transform: translate(-50%, -50%) translate(0mm, 0mm);
-          "
-          src="../assets/boxes/top/q.svg"
-        />
+        <QuadBox></QuadBox>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import QuadBox from "./boxes/QuadBox.vue";
 import { onMounted, onUnmounted, reactive } from "vue";
 
 var leftPointerDown = false;
